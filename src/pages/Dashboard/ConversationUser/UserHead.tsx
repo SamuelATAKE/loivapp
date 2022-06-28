@@ -119,7 +119,7 @@ const ProfileImage = ({
                 ></span>
               </>
             ) : (
-              <div className="flex-shrink-0 avatar-sm align-self-center ms-0">
+              <div className="avatar-sm align-self-center">
                 <span
                   className={classnames(
                     "avatar-title",
@@ -174,7 +174,7 @@ const Search = () => {
       </DropdownToggle>
       <DropdownMenu className="dropdown-menu p-0 dropdown-menu-end dropdown-menu-lg">
         <div className="search-box p-2">
-          <Input type="text" className="form-control" placeholder="Search.." />
+          <Input type="text" className="form-control" placeholder="Rechercher.." />
         </div>
       </DropdownMenu>
     </Dropdown>
@@ -207,7 +207,7 @@ const More = ({
           className="d-flex justify-content-between align-items-center d-lg-none user-profile-show"
           to="#"
         >
-          View Profile <i className="bx bx-user text-muted"></i>
+          Voir Profil <i className="bx bx-user text-muted"></i>
         </DropdownItem>
         <DropdownItem
           className="d-flex justify-content-between align-items-center d-lg-none"
@@ -221,7 +221,7 @@ const More = ({
           to="#"
           onClick={onOpenVideo}
         >
-          Video <i className="bx bx-video text-muted"></i>
+          Vidéo <i className="bx bx-video text-muted"></i>
         </DropdownItem>
         <DropdownItem
           className="d-flex justify-content-between align-items-center"
@@ -230,11 +230,11 @@ const More = ({
         >
           {isArchive ? (
             <>
-              Un-Archive <i className="bx bx-archive-out text-muted"></i>
+              Désarchiver <i className="bx bx-archive-out text-muted"></i>
             </>
           ) : (
             <>
-              Archive <i className="bx bx-archive text-muted"></i>
+              Archiver <i className="bx bx-archive text-muted"></i>
             </>
           )}
         </DropdownItem>
@@ -242,14 +242,14 @@ const More = ({
           className="d-flex justify-content-between align-items-center"
           to="#"
         >
-          Muted <i className="bx bx-microphone-off text-muted"></i>
+          Muté <i className="bx bx-microphone-off text-muted"></i>
         </DropdownItem>
         <DropdownItem
           className="d-flex justify-content-between align-items-center"
           to="#"
           onClick={onDelete}
         >
-          Delete <i className="bx bx-trash text-muted"></i>
+          Supprimer <i className="bx bx-trash text-muted"></i>
         </DropdownItem>
       </DropdownMenu>
     </Dropdown>
@@ -275,7 +275,7 @@ const PinnedAlert = ({ onOpenPinnedTab }: PinnedAlertProps) => {
       <div className="d-flex align-items-start bookmark-tabs">
         <div className="tab-list-link">
           <Link to="#" className="tab-links" onClick={onOpenPinnedTab}>
-            <i className="ri-pushpin-fill align-middle me-1"></i> 10 Pinned
+            <i className="ri-pushpin-fill align-middle me-1"></i> 10 Epinglés
           </Link>
         </div>
         <div id="add-bookmark">
@@ -284,7 +284,7 @@ const PinnedAlert = ({ onOpenPinnedTab }: PinnedAlertProps) => {
           </Link>
         </div>
         <UncontrolledTooltip target="add-bookmark" placement="bottom">
-          Add Bookmark
+          Ajouter signet
         </UncontrolledTooltip>
       </div>
     </Alert>

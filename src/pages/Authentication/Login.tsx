@@ -39,7 +39,7 @@ import Loader from "../../components/Loader";
 interface LocationTypes {
   from?: Location;
 }
-interface LoginProps {}
+interface LoginProps { }
 const Login = (props: LoginProps) => {
   // global store
   const { dispatch, useAppSelector } = useRedux();
@@ -71,8 +71,8 @@ const Login = (props: LoginProps) => {
 
   const resolver = yupResolver(
     yup.object().shape({
-      email: yup.string().required("Please Enter E-mail."),
-      password: yup.string().required("Please Enter Password."),
+      email: yup.string().required("Entrez votre adresse mail."),
+      password: yup.string().required("Entrez votre mot de passe."),
     })
   );
 
@@ -133,8 +133,8 @@ const Login = (props: LoginProps) => {
         <Col sm={8} lg={6} xl={5} className="col-xxl-4">
           <div className="py-md-5 py-4">
             <AuthHeader
-              title="Welcome Back !"
-              subtitle="Sign in to continue to Doot."
+              title="Bienvenu !"
+              subtitle="Connectez-vous?"
             />
 
             {error && <Alert color="danger">{error}</Alert>}
@@ -146,21 +146,21 @@ const Login = (props: LoginProps) => {
               {loginLoading && <Loader />}
               <div className="mb-3">
                 <FormInput
-                  label="Username"
+                  label="Nom d'utilisateur"
                   type="text"
                   name="email"
                   register={register}
                   errors={errors}
                   control={control}
                   labelClassName="form-label"
-                  placeholder="Enter username"
+                  placeholder="Entrez votre nom d'utilisateur"
                   className="form-control"
                 />
               </div>
 
               <div className="mb-3">
                 <FormInput
-                  label="Password"
+                  label="Mot de passe"
                   type="password"
                   name="password"
                   register={register}
@@ -168,7 +168,7 @@ const Login = (props: LoginProps) => {
                   control={control}
                   labelClassName="form-label"
                   className="form-control pe-5"
-                  placeholder="Enter Password"
+                  placeholder="Entrez votre mot de passe"
                 />
               </div>
 
@@ -182,19 +182,19 @@ const Login = (props: LoginProps) => {
                   className="form-check-label font-size-14"
                   htmlFor="remember-check"
                 >
-                  Remember me
+                  Se souvenir
                 </Label>
               </div>
 
               <div className="text-center mt-4">
                 <Button color="primary" className="w-100" type="submit">
-                  Log In
+                  Se connecter
                 </Button>
               </div>
 
               <div className="mt-4 text-center">
                 <div className="signin-other-title">
-                  <h5 className="font-size-14 mb-4 title">Sign in with</h5>
+                  <h5 className="font-size-14 mb-4 title">Se connecter avec</h5>
                 </div>
                 <Row className="">
                   <div className="col-4">
@@ -250,7 +250,7 @@ const Login = (props: LoginProps) => {
                           </button>
                         )}
                         onSuccess={googleResponse}
-                        onFailure={() => {}}
+                        onFailure={() => { }}
                       />
                     </div>
                     <UncontrolledTooltip placement="top" target="google">
@@ -263,13 +263,13 @@ const Login = (props: LoginProps) => {
 
             <div className="mt-5 text-center text-muted">
               <p>
-                Don't have an account ?{" "}
+                Vous n'avez pas de compte ?{" "}
                 <Link
                   to="/auth-register"
                   className="fw-medium text-decoration-underline"
                 >
                   {" "}
-                  Register
+                  Inscrivez-vous
                 </Link>
               </p>
             </div>

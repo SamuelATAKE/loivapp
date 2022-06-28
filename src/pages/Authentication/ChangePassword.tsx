@@ -38,12 +38,12 @@ const ChangePassword = (props: ChangePasswordProps) => {
 
   const resolver = yupResolver(
     yup.object().shape({
-      oldPassword: yup.string().required("Please Enter Old Password."),
-      password: yup.string().required("Please Enter New Password."),
+      oldPassword: yup.string().required("Entrez votre ancien mot de passe."),
+      password: yup.string().required("Entrez votre nouveau mot de passe."),
       confirmpassword: yup
         .string()
-        .oneOf([yup.ref("password"), null], "Passwords don't match")
-        .required("This value is required."),
+        .oneOf([yup.ref("password"), null], "Les mots de passes ne correspondent pas")
+        .required("Cette valeur est requise."),
     })
   );
 
@@ -91,14 +91,14 @@ const ChangePassword = (props: ChangePasswordProps) => {
               {changePassLoading && <Loader />}
               <div className="mb-3">
                 <FormInput
-                  label="Old Password"
+                  label="Ancien mot de passe"
                   type="password"
                   name="oldPassword"
                   register={register}
                   errors={errors}
                   control={control}
                   labelClassName="form-label"
-                  placeholder="Enter Old Password"
+                  placeholder="Entrez votre ancien mot de passe"
                   className="form-control"
                   withoutLabel={true}
                   hidePasswordButton={true}
@@ -106,7 +106,7 @@ const ChangePassword = (props: ChangePasswordProps) => {
               </div>
               <div className="mb-3">
                 <FormInput
-                  label="New Password"
+                  label="Nouveau mot de passe"
                   type="password"
                   name="password"
                   register={register}
@@ -121,14 +121,14 @@ const ChangePassword = (props: ChangePasswordProps) => {
               </div>
               <div className="mb-3">
                 <FormInput
-                  label="Confirm New Password"
+                  label="Confirmer le nouveau mot de passe"
                   type="password"
                   name="confirmpassword"
                   register={register}
                   errors={errors}
                   control={control}
                   labelClassName="form-label"
-                  placeholder="Enter Confirm Password"
+                  placeholder="Confirmer le nouveau mot de passe"
                   className="form-control"
                   withoutLabel={true}
                   hidePasswordButton={true}
@@ -139,12 +139,12 @@ const ChangePassword = (props: ChangePasswordProps) => {
                 <div className="row">
                   <div className="col-6">
                     <button className="btn btn-primary w-100" type="submit">
-                      Save
+                      Sauvegarder
                     </button>
                   </div>
                   <div className="col-6">
                     <button className="btn btn-light w-100" type="button">
-                      Cancel
+                      Annuler
                     </button>
                   </div>
                 </div>

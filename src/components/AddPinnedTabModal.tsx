@@ -55,20 +55,20 @@ const Pin = ({ pin }: PinProps) => {
                 className="d-flex align-items-center justify-content-between"
                 href="#"
               >
-                Open <i className="bx bx-folder-open ms-2 text-muted"></i>
+                Ouvrir <i className="bx bx-folder-open ms-2 text-muted"></i>
               </DropdownItem>
               <DropdownItem
                 className="d-flex align-items-center justify-content-between"
                 href="#"
               >
-                Edit <i className="bx bx-pencil ms-2 text-muted"></i>
+                Editer <i className="bx bx-pencil ms-2 text-muted"></i>
               </DropdownItem>
               <DropdownItem divider />
               <DropdownItem
                 className="d-flex align-items-center justify-content-between"
                 href="#"
               >
-                Delete <i className="bx bx-trash ms-2 text-muted"></i>
+                Supprimer <i className="bx bx-trash ms-2 text-muted"></i>
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>
@@ -99,19 +99,19 @@ const AddPinnedTabModal = ({
     >
       <ModalBody className="p-0">
         <ModalHeader className="modal-title-custom" toggle={onClose}>
-          Bookmark
+          Signet
         </ModalHeader>
         <div className="modal-body p-4">
           <div className="d-flex align-items-center mb-3">
             <div className="flex-grow-1">
               <div>
-                <h5 className="font-size-16 mb-0">10 Pinned tabs</h5>
+                <h5 className="font-size-16 mb-0">10 Tabs épinglés</h5>
               </div>
             </div>
             <div className="flex-shrink-0">
               <div>
                 <button type="button" className="btn btn-sm btn-soft-primary">
-                  <i className="bx bx-plus"></i> Pin
+                  <i className="bx bx-plus"></i> Epingler
                 </button>
               </div>
             </div>

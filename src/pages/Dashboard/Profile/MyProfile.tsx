@@ -38,7 +38,7 @@ const MyProfile = ({ basicDetails }: MyProfileProps) => {
             <div className="user-chat-nav p-2 ps-3">
               <div className="d-flex w-100 align-items-center">
                 <div className="flex-grow-1">
-                  <h5 className="text-white mb-0">My Profile</h5>
+                  <h5 className="text-white mb-0">Mon Profil</h5>
                 </div>
                 <div className="flex-shrink-0">
                   <Dropdown isOpen={dropdownOpen} toggle={toggle}>
@@ -61,14 +61,14 @@ const MyProfile = ({ basicDetails }: MyProfileProps) => {
                         className="d-flex align-items-center justify-content-between"
                         href="#"
                       >
-                        Setting <i className="bx bx-cog text-muted ms-2"></i>
+                        Paramètres <i className="bx bx-cog text-muted ms-2"></i>
                       </DropdownItem>
                       <DropdownItem divider />
                       <DropdownItem
                         className="d-flex align-items-center justify-content-between"
                         href="#"
                       >
-                        Help{" "}
+                        Aide{" "}
                         <i className="bx bx-help-circle ms-2 text-muted"></i>
                       </DropdownItem>
                     </DropdownMenu>

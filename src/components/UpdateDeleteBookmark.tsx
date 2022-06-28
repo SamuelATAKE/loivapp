@@ -80,7 +80,7 @@ const UpdateDeleteBookmark = ({
               type="text"
               name="email"
               id="update-bookmark"
-              placeholder="add bookmark title"
+              placeholder="Ajouter un titre au signet"
               value={data.bookmarkTitle || ""}
               onChange={(e: any) => {
                 onChangeData("bookmarkTitle", e.target.value);
@@ -91,10 +91,10 @@ const UpdateDeleteBookmark = ({
       </ModalBody>
       <ModalFooter>
         <Button type="button" color="none" onClick={onClose}>
-          Close
+          Fermer
         </Button>
         <Button color="primary" disabled={!valid} onClick={onSubmit}>
-          Update
+          Mise à jour
         </Button>{" "}
       </ModalFooter>
     </Modal>

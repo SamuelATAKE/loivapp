@@ -41,8 +41,8 @@ const RecoverPassword = (props: RecoverPasswordProps) => {
     yup.object().shape({
       email: yup
         .string()
-        .email("This value should be a valid email.")
-        .required("Please Enter E-mail."),
+        .email("Cette valeur doit être une adresse e-mail valide.")
+        .required("Veuillez saisir un e-mail."),
     })
   );
 
@@ -71,8 +71,8 @@ const RecoverPassword = (props: RecoverPasswordProps) => {
         <Col sm={8} lg={6} xl={5} className="col-xxl-4">
           <div className="py-md-5 py-4">
             <AuthHeader
-              title="Reset Password"
-              subtitle="Reset Password with Doot."
+              title="Réinitialiser le mot de passe"
+              subtitle="réinitialiser le mot de passe avec LOIV."
             />
 
             {forgetError && forgetError ? (
@@ -83,7 +83,7 @@ const RecoverPassword = (props: RecoverPasswordProps) => {
             ) : null}
             {!forgetError && !forgetSuccessMsg && (
               <Alert color="info" className="text-center my-4">
-                Enter your Email and instructions will be sent to you!
+                Entrez votre e-mail et des instructions vous seront envoyées !
               </Alert>
             )}
 
@@ -101,25 +101,25 @@ const RecoverPassword = (props: RecoverPasswordProps) => {
                   errors={errors}
                   control={control}
                   labelClassName="form-label"
-                  placeholder="Enter Email"
+                  placeholder="Entrez votre adresse mail"
                   className="form-control"
                 />
               </div>
               <div className="text-center mt-4">
                 <Button color="primary" className="w-100" type="submit">
-                  Reset
+                Réinitialiser
                 </Button>
               </div>
             </Form>
             <div className="mt-5 text-center text-muted">
               <p>
-                Remember It ?{" "}
+                Se souvenir ?{" "}
                 <Link
                   to="/auth-login"
                   className="fw-medium text-decoration-underline"
                 >
                   {" "}
-                  Login
+                  Connexion
                 </Link>
               </p>
             </div>

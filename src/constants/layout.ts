@@ -3,7 +3,7 @@ export enum LAYOUT_MODES {
   DARK = "dark",
 }
 export enum CHATS_TABS {
-  ARCHIVE = "acrhive",
+  ARCHIVE = "archive",
   DEFAULT = "default",
 }
 

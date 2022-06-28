@@ -22,7 +22,7 @@ const Help = () => {
         <li className="list-group-item py-3 px-0 pb-0">
           <h5 className="font-size-13 mb-0">
             <Link to="#" className="text-body d-block">
-              Terms & Privacy policy
+              Termes & Politique de confidentialité
             </Link>
           </h5>
         </li>

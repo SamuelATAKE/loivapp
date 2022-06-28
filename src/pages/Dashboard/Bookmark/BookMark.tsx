@@ -91,20 +91,20 @@ const BookMark = ({ bookmark, onUpdate, onDelete }: BookMarkProps) => {
               </DropdownToggle>
               <DropdownMenu className="dropdown-menu-end">
                 <DropdownItem className="d-flex align-items-center justify-content-between">
-                  Open <i className="bx bx-folder-open ms-2 text-muted"></i>
+                  Ouvert <i className="bx bx-folder-open ms-2 text-muted"></i>
                 </DropdownItem>
                 <DropdownItem
                   onClick={onOpen}
                   className="d-flex align-items-center justify-content-between"
                 >
-                  Edit <i className="bx bx-pencil ms-2 text-muted"></i>
+                  Editer <i className="bx bx-pencil ms-2 text-muted"></i>
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem
                   onClick={onDeleteBookmark}
                   className="d-flex align-items-center justify-content-between"
                 >
-                  Delete <i className="bx bx-trash ms-2 text-muted"></i>
+                  Supprimer <i className="bx bx-trash ms-2 text-muted"></i>
                 </DropdownItem>
               </DropdownMenu>
             </Dropdown>

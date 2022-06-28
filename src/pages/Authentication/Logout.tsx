@@ -34,17 +34,17 @@ const Logout = (props: any) => {
               </div>
             </div>
             <div className="mt-4 pt-2">
-              <h5>You are Logged Out</h5>
+              <h5>Vous êtes déconnectés</h5>
               <p className="text-muted font-size-15">
-                Thank you for using{" "}
-                <span className="fw-semibold text-dark">Doot</span>
+                Merci d'utiliser {" "}
+                <span className="fw-semibold text-dark">LOIV</span>
               </p>
               <div className="mt-4">
                 <Link
                   to="/auth-login"
                   className="btn btn-primary w-100 waves-effect waves-light"
                 >
-                  Sign In
+                  Connexion
                 </Link>
               </div>
             </div>

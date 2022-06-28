@@ -39,7 +39,7 @@ const Media = ({ media, limit }: MediaProps) => {
         </div>
         <div className="flex-shrink-0">
           <Link to="#" className="font-size-12 d-block mb-2">
-            Show all
+            Voir tout
           </Link>
         </div>
       </div>
@@ -61,7 +61,7 @@ const Media = ({ media, limit }: MediaProps) => {
                 } else return null;
               }
             )
-          : "No Media Files."}
+          : "Aucun fichier média."}
       </div>
     </div>
   );

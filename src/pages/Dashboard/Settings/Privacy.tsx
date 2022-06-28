@@ -96,7 +96,7 @@ const Privacy = ({ privacy, onChangeSettings }: PrivacyProps) => {
         <li className="list-group-item py-3 px-0">
           <div className="d-flex align-items-center">
             <div className="flex-grow-1 overflow-hidden">
-              <h5 className="font-size-13 mb-0 text-truncate">Read receipts</h5>
+              <h5 className="font-size-13 mb-0 text-truncate">Lire les reçus</h5>
             </div>
             <div className="flex-shrink-0 ms-2">
               <div className="form-check form-switch">
@@ -123,7 +123,7 @@ const Privacy = ({ privacy, onChangeSettings }: PrivacyProps) => {
             onChange={(value: string) => {
               onChangeData("displayGroups", value);
             }}
-            label="Groups"
+            label="Groupes"
           />
         </li>
       </ul>

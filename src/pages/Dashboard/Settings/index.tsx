@@ -143,13 +143,13 @@ const Index = (props: IndexProps) => {
   const collapseItems: CollapseItemTypes[] = [
     {
       value: SETTINGS_COLLAPSES.PROFILE,
-      label: "Personal Info",
+      label: "Infos personnelles",
       icon: "bx bxs-user",
       component: <PersonalInfo basicDetails={settings.basicDetails} />,
     },
     {
       value: SETTINGS_COLLAPSES.THEME,
-      label: "Themes",
+      label: "Thèmes",
       icon: "bx bxs-adjust-alt",
       component: (
         <ThemeSettings theme={settings.theme} onChangeData={onChangeData} />
@@ -157,7 +157,7 @@ const Index = (props: IndexProps) => {
     },
     {
       value: SETTINGS_COLLAPSES.PRIVACY,
-      label: "Privacy",
+      label: "Secret",
       icon: "bx bxs-lock",
       component: (
         <Privacy privacy={settings.privacy} onChangeSettings={onChangeData} />
@@ -165,7 +165,7 @@ const Index = (props: IndexProps) => {
     },
     {
       value: SETTINGS_COLLAPSES.SECURITY,
-      label: "Security",
+      label: "Sécurité",
       icon: "bx bxs-check-shield",
       component: (
         <Security
@@ -176,7 +176,7 @@ const Index = (props: IndexProps) => {
     },
     {
       value: SETTINGS_COLLAPSES.HELP,
-      label: "Help",
+      label: "Aide",
       icon: "bx bxs-help-circle",
       component: <Help />,
     },

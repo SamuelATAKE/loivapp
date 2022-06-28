@@ -56,7 +56,7 @@ const AttachedFiles = ({
               </span>
             </Button>
             <h5 className="font-size-11 text-uppercase text-muted mt-2">
-              Favourite
+              Favoris
             </h5>
           </div>
         </div>
@@ -89,7 +89,7 @@ const AttachedFiles = ({
               </span>
             </Button>
             <h5 className="font-size-11 text-uppercase text-muted mt-2">
-              Video
+              Vidéo
             </h5>
           </div>
         </div>
@@ -114,12 +114,12 @@ const AttachedFiles = ({
                 >
                   {chatUserDetails.isArchived ? (
                     <>
-                      Un-Archive{" "}
+                      Désarchiver{" "}
                       <i className="bx bx-archive-out text-muted"></i>
                     </>
                   ) : (
                     <>
-                      Archive <i className="bx bx-archive text-muted"></i>
+                      Archiver <i className="bx bx-archive text-muted"></i>
                     </>
                   )}
                 </DropdownItem>
@@ -127,18 +127,18 @@ const AttachedFiles = ({
                   className=" d-flex justify-content-between align-items-center"
                   to="#"
                 >
-                  Muted <i className="bx bx-microphone-off text-muted"></i>
+                  Muté <i className="bx bx-microphone-off text-muted"></i>
                 </DropdownItem>
                 <DropdownItem
                   className=" d-flex justify-content-between align-items-center"
                   to="#"
                 >
-                  Delete <i className="bx bx-trash text-muted"></i>
+                  Supprimer <i className="bx bx-trash text-muted"></i>
                 </DropdownItem>
               </DropdownMenu>
             </Dropdown>
             <h5 className="font-size-11 text-uppercase text-muted mt-2">
-              More
+              Plus
             </h5>
           </div>
         </div>

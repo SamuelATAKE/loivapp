@@ -112,17 +112,17 @@ const UserProfile = ({ basicDetails, status }: UserProfileProps) => {
         <DropdownMenu>
           <DropdownItem onClick={() => onChangeStatus(STATUS_TYPES.ACTIVE)}>
             <i className="bx bxs-circle text-success font-size-10 me-1 align-middle"></i>{" "}
-            Active
+            Actif
           </DropdownItem>
           <DropdownItem onClick={() => onChangeStatus(STATUS_TYPES.AWAY)}>
             <i className="bx bxs-circle text-warning font-size-10 me-1 align-middle"></i>{" "}
-            Away
+            Non-actif
           </DropdownItem>
           <DropdownItem
             onClick={() => onChangeStatus(STATUS_TYPES.DO_NOT_DISTURB)}
           >
             <i className="bx bxs-circle text-danger font-size-10 me-1 align-middle"></i>{" "}
-            Do not disturb
+            Ne pas déranger
           </DropdownItem>
         </DropdownMenu>
       </Dropdown>

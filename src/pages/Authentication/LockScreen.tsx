@@ -20,7 +20,7 @@ import FormInput from "../../components/FormInput";
 // images
 import avatar1 from "../../assets/images/users/avatar-1.jpg";
 
-interface LockScreenProps {}
+interface LockScreenProps { }
 const LockScreen = (props: LockScreenProps) => {
   const resolver = yupResolver(
     yup.object().shape({
@@ -68,14 +68,14 @@ const LockScreen = (props: LockScreenProps) => {
             >
               <div className="mb-3">
                 <FormInput
-                  label="Password"
+                  label="Mot de passe"
                   type="password"
                   name="password"
                   register={register}
                   errors={errors}
                   control={control}
                   labelClassName="form-label"
-                  placeholder="Enter Password"
+                  placeholder="Entrez votre mot de passe"
                   className="form-control"
                   withoutLabel={true}
                   hidePasswordButton={true}
@@ -89,13 +89,13 @@ const LockScreen = (props: LockScreenProps) => {
             </Form>
             <div className="mt-5 text-center text-muted">
               <p>
-                Not you ? return{" "}
+                Pas vous ? return{" "}
                 <Link
                   to="/auth-login"
                   className="fw-medium text-decoration-underline"
                 >
                   {" "}
-                  Login
+                  Connexion
                 </Link>
               </p>
             </div>

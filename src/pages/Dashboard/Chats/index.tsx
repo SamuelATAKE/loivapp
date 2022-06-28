@@ -29,12 +29,12 @@ import { CreateChannelPostData } from "../../../redux/actions";
 import AppSimpleBar from "../../../components/AppSimpleBar";
 import AddGroupModal from "../../../components/AddGroupModal";
 import InviteContactModal from "../../../components/InviteContactModal";
-import AddButton from "../../../components/AddButton";
+// import AddButton from "../../../components/AddButton";
 import ContactModal from "../../../components/ContactModal";
 
 import Favourites from "./Favourites";
 import DirectMessages from "./DirectMessages";
-import Chanels from "./Chanels";
+// import Chanels from "./Chanels";
 import Archive from "./Archive";
 import { CHATS_TABS } from "../../../constants";
 
@@ -47,7 +47,7 @@ const Index = (props: IndexProps) => {
     isContactInvited,
     favourites,
     directMessages,
-    channels,
+    // channels,
     isContactsAdded,
     isChannelCreated,
     selectedChat,
@@ -88,9 +88,9 @@ const Index = (props: IndexProps) => {
   invite contact modal handeling
   */
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const openModal = () => {
-    setIsOpen(true);
-  };
+  // const openModal = () => {
+  //   setIsOpen(true);
+  // };
   const closeModal = () => {
     setIsOpen(false);
   };
@@ -135,9 +135,9 @@ const Index = (props: IndexProps) => {
   */
   const [isOpenCreateChannel, setIsOpenCreateChannel] =
     useState<boolean>(false);
-  const openCreateChannelModal = () => {
-    setIsOpenCreateChannel(true);
-  };
+  // const openCreateChannelModal = () => {
+  //   setIsOpenCreateChannel(true);
+  // };
   const closeCreateChannelModal = () => {
     setIsOpenCreateChannel(false);
   };
@@ -198,24 +198,24 @@ const Index = (props: IndexProps) => {
         <div className="px-4 pt-4">
           <div className="d-flex align-items-start">
             <div className="flex-grow-1">
-              <h4 className="mb-4">Chats</h4>
+              <h4 className="mb-4">Discussions</h4>
             </div>
-            <div className="flex-shrink-0">
-              <div id="add-contact">
+            {/* <div className="flex-shrink-0">
+              <div id="add-contact"> */}
                 {/* Button trigger modal */}
-                <AddButton onClick={openModal} />
+                {/* <AddButton onClick={openModal} />
               </div>
               <UncontrolledTooltip target="add-contact" placement="bottom">
-                Add Contact
+                Ajouter un Contact
               </UncontrolledTooltip>
-            </div>
+            </div> */}
           </div>
           <Form>
             <div className="input-group mb-3">
               <input
                 type="text"
                 className="form-control bg-light border-0 pe-0"
-                placeholder="Search here.."
+                placeholder="Rechercher.."
                 aria-label="Example text with button addon"
                 aria-describedby="searchbtn-addon"
               />
@@ -250,19 +250,20 @@ const Index = (props: IndexProps) => {
               />
 
               {/* channels list */}
-              <Chanels
+              {/* // eslint-disable-next-line */}
+              {/* <Chanels
                 channels={channels}
                 openCreateChannel={openCreateChannelModal}
                 selectedChat={selectedChat}
                 onSelectChat={onSelectChat}
-              />
+              /> */}
               <h5 className="text-center mb-2">
                 <Link
                   to="#"
                   className="mb-3 px-4 mt-4 font-size-11 text-primary"
                   onClick={() => onChangeTab(CHATS_TABS.ARCHIVE)}
                 >
-                  Archived Contacts{" "}
+                  Contacts archivés{" "}
                   <i className="bx bxs-archive-in align-middle" />
                 </Link>
               </h5>
@@ -281,7 +282,7 @@ const Index = (props: IndexProps) => {
                   className="mb-3 px-4 mt-4 font-size-11 text-primary"
                   onClick={() => onChangeTab(CHATS_TABS.DEFAULT)}
                 >
-                  Chats <i className="bx bxs-archive-out align-middle" />
+                  Discussions <i className="bx bxs-archive-out align-middle" />
                 </Link>
               </h5>
             </>

@@ -142,11 +142,11 @@ const Index = ({
           closeClassName="selected-media-close"
         >
           <p className="me-2 mb-0">
-            {images && !files && ` You have selected ${images.length} images`}
-            {files && !images && ` You have selected ${files.length} files`}
+            {images && !files && ` Vous avez séléctionné ${images.length} images`}
+            {files && !images && ` Vous avez sélectionnez ${files.length} fichiers`}
             {files &&
               images &&
-              ` You have selected ${files.length} files & ${images.length} images.`}
+              ` Vous avez sélectionné ${files.length} fichiers & ${images.length} images.`}
           </p>
         </Alert>
       ) : null}

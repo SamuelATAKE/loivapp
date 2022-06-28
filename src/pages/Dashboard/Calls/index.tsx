@@ -39,7 +39,7 @@ const Index = (props: IndexProps) => {
   return (
     <div className="position-relative">
       {getCallsLoading && <Loader />}
-      <LeftbarTitle title="Calls" />
+      <LeftbarTitle title="Appels" />
       {/* end p-4 */}
 
       {/* Start contact lists */}

@@ -4,7 +4,7 @@ const Day = () => {
   return (
     <li className="chat-list">
       <div className="chat-day-title">
-        <span className="title">Today</span>
+        <span className="title">Aujourd'hui</span>
       </div>
     </li>
   );

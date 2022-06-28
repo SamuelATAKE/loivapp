@@ -77,19 +77,19 @@ const ContactItem = ({ contact, onSelectChat }: ContactItemProps) => {
                 className="d-flex align-items-center justify-content-between"
                 href="#"
               >
-                Edit <i className="bx bx-pencil ms-2 text-muted"></i>
+                Editer <i className="bx bx-pencil ms-2 text-muted"></i>
               </DropdownItem>
               <DropdownItem
                 className="d-flex align-items-center justify-content-between"
                 href="#"
               >
-                Block <i className="bx bx-block ms-2 text-muted"></i>
+                Bloquer <i className="bx bx-block ms-2 text-muted"></i>
               </DropdownItem>
               <DropdownItem
                 className="d-flex align-items-center justify-content-between"
                 href="#"
               >
-                Remove <i className="bx bx-trash ms-2 text-muted"></i>
+                Supprimer <i className="bx bx-trash ms-2 text-muted"></i>
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>

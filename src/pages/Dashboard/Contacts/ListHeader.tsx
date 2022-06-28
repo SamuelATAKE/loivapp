@@ -26,7 +26,7 @@ const ListHeader = ({ openModal, search, onChangeSearch }: ListHeaderProps) => {
             </Button>
           </div>
           <UncontrolledTooltip target="add-contact-button" placement="bottom">
-            Add Contact
+            Ajouter Contact
           </UncontrolledTooltip>
         </div>
       </div>
@@ -36,7 +36,7 @@ const ListHeader = ({ openModal, search, onChangeSearch }: ListHeaderProps) => {
           <Input
             type="text"
             className="form-control bg-light border-0 pe-0"
-            placeholder="Search Contacts.."
+            placeholder="Rechercher Contacts.."
             aria-label="Search Contacts..."
             aria-describedby="button-searchcontactsaddon"
             value={search || ""}

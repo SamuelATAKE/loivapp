@@ -117,7 +117,7 @@ const FormInput: React.FunctionComponent<FormInputProps> = ({
                   {!withoutLabel && (
                     <div className="float-end">
                       <a href="auth-recoverpw" className="text-muted">
-                        Forgot password?
+                        Mot de passe oublié?
                       </a>
                     </div>
                   )}
@@ -159,7 +159,7 @@ const FormInput: React.FunctionComponent<FormInputProps> = ({
                       className="form-check-label font-size-14"
                       for="remember-check"
                     >
-                      Remember me
+                      Se souvenir
                     </Label>
                   </div>
                   {errors && errors[name] ? (

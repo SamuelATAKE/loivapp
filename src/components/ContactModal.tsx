@@ -171,7 +171,7 @@ const ContactModal = ({ isOpen, onClose, onAddContact }: ContactModalProps) => {
           <Input
             type="text"
             className="form-control bg-light border-0 pe-0"
-            placeholder="Search here.."
+            placeholder="Rechercher.."
             aria-label="Example text with button addon"
             aria-describedby="contactSearchbtn-addon"
             value={search || ""}
@@ -216,7 +216,7 @@ const ContactModal = ({ isOpen, onClose, onAddContact }: ContactModalProps) => {
         )}
       </ModalBody>
       <ModalFooter>
-        <Button type="button" color="link">
+        <Button type="button" color="link" onClick={onClose}>
           Cancel
         </Button>
         <Button

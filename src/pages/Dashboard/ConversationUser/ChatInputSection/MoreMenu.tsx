@@ -82,7 +82,7 @@ const MoreMenu = ({
                   </Label>
                 </div>
                 <h5 className="font-size-11 text-uppercase mt-3 mb-0 text-body text-truncate">
-                  Attached
+                  Attaché
                 </h5>
               </div>
             </SwiperSlide>
@@ -95,7 +95,7 @@ const MoreMenu = ({
                 </div>
                 <h5 className="font-size-11 text-uppercase text-truncate mt-3 mb-0">
                   <Link to="#" className="text-body stretched-link">
-                    Camera
+                    Caméra
                   </Link>
                 </h5>
               </div>
@@ -134,7 +134,7 @@ const MoreMenu = ({
                   </Label>
                 </div>
                 <h5 className="font-size-11 text-uppercase mt-3 mb-0 text-body text-truncate">
-                  Gallery
+                  Galerie
                 </h5>
               </div>
             </SwiperSlide>
@@ -163,7 +163,7 @@ const MoreMenu = ({
 
                 <h5 className="font-size-11 text-uppercase text-truncate mt-3 mb-0">
                   <Link to="#" className="text-body stretched-link">
-                    Location
+                    Localisation
                   </Link>
                 </h5>
               </div>

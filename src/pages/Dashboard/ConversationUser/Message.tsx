@@ -46,38 +46,38 @@ const Menu = ({ onDelete, onReply, onForward }: MenuProps) => {
           to="#"
           onClick={onReply}
         >
-          Reply <i className="bx bx-share ms-2 text-muted"></i>
+          Répondez <i className="bx bx-share ms-2 text-muted"></i>
         </DropdownItem>
         <DropdownItem
           className="d-flex align-items-center justify-content-between"
           to="#"
           onClick={onForward}
         >
-          Forward <i className="bx bx-share-alt ms-2 text-muted"></i>
+          Transférer <i className="bx bx-share-alt ms-2 text-muted"></i>
         </DropdownItem>
         <DropdownItem
           className="d-flex align-items-center justify-content-between"
           to="#"
         >
-          Copy <i className="bx bx-copy text-muted ms-2"></i>
+          Copier <i className="bx bx-copy text-muted ms-2"></i>
         </DropdownItem>
         <DropdownItem
           className="d-flex align-items-center justify-content-between"
           to="#"
         >
-          Bookmark <i className="bx bx-bookmarks text-muted ms-2"></i>
+          Signet <i className="bx bx-bookmarks text-muted ms-2"></i>
         </DropdownItem>
         <DropdownItem
           className="d-flex align-items-center justify-content-between"
           to="#"
         >
-          Mark as Unread <i className="bx bx-message-error text-muted ms-2"></i>
+          Marquer comme non lu <i className="bx bx-message-error text-muted ms-2"></i>
         </DropdownItem>
         <DropdownItem
           className="d-flex align-items-center justify-content-between delete-item"
           onClick={onDelete}
         >
-          Delete <i className="bx bx-trash text-muted ms-2"></i>
+          Supprimer <i className="bx bx-trash text-muted ms-2"></i>
         </DropdownItem>
       </DropdownMenu>
     </UncontrolledDropdown>
@@ -103,7 +103,7 @@ const ImageMoreMenu = ({ onDelete }: ImageMoreMenuProps) => {
               className=" d-flex align-items-center justify-content-between"
               to="#"
             >
-              Download <i className="bx bx-download ms-2 text-muted"></i>
+              Télécharger <i className="bx bx-download ms-2 text-muted"></i>
             </DropdownItem>
             <DropdownItem
               className=" d-flex align-items-center justify-content-between"
@@ -111,7 +111,7 @@ const ImageMoreMenu = ({ onDelete }: ImageMoreMenuProps) => {
               data-bs-toggle="collapse"
               data-bs-target=".replyCollapse"
             >
-              Reply <i className="bx bx-share ms-2 text-muted"></i>
+              Répondre <i className="bx bx-share ms-2 text-muted"></i>
             </DropdownItem>
             <DropdownItem
               className=" d-flex align-items-center justify-content-between"
@@ -119,20 +119,20 @@ const ImageMoreMenu = ({ onDelete }: ImageMoreMenuProps) => {
               data-bs-toggle="modal"
               data-bs-target=".forwardModal"
             >
-              Forward <i className="bx bx-share-alt ms-2 text-muted"></i>
+              Transférer <i className="bx bx-share-alt ms-2 text-muted"></i>
             </DropdownItem>
             <DropdownItem
               className=" d-flex align-items-center justify-content-between"
               to="#"
             >
-              Bookmark <i className="bx bx-bookmarks text-muted ms-2"></i>
+              Signet <i className="bx bx-bookmarks text-muted ms-2"></i>
             </DropdownItem>
             <DropdownItem
               className=" d-flex align-items-center justify-content-between delete-item"
               to="#"
               onClick={onDelete}
             >
-              Delete <i className="bx bx-trash ms-2 text-muted"></i>
+              Supprimer <i className="bx bx-trash ms-2 text-muted"></i>
             </DropdownItem>
           </DropdownMenu>
         </UncontrolledDropdown>

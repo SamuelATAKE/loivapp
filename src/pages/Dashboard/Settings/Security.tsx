@@ -30,7 +30,7 @@ const Security = ({ security, onChangeSettings }: SecurityProps) => {
           <div className="d-flex align-items-center">
             <div className="flex-grow-1 overflow-hidden">
               <h5 className="font-size-13 mb-0 text-truncate">
-                Show security notification
+              Afficher la notification de sécurité
               </h5>
             </div>
             <div className="flex-shrink-0 ms-2">

@@ -17,13 +17,13 @@ export interface DisplayOpt {
 }
 
 export const DisplayTypes: Array<DisplayOpt> = [
-  { label: "Everyone", value: DISPLAY_TYPES.EVERYONE },
-  { label: "Nobody", value: DISPLAY_TYPES.NOBODY },
-  { label: "Selected", value: DISPLAY_TYPES.SELECTED },
+  { label: "Tout le monde", value: DISPLAY_TYPES.EVERYONE },
+  { label: "Personne", value: DISPLAY_TYPES.NOBODY },
+  { label: "Selectionné", value: DISPLAY_TYPES.SELECTED },
 ];
 
 export enum STATUS_TYPES {
-  ACTIVE = "Active",
-  AWAY = "Away",
-  DO_NOT_DISTURB = "Do not disturb",
+  ACTIVE = "Actif",
+  AWAY = "Non actif",
+  DO_NOT_DISTURB = "Ne pas déranger",
 }

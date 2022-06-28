@@ -127,7 +127,7 @@ const ThemeImage = ({ theme, onChangeData }: ThemeImageProps) => {
   return (
     <div className="mt-4 pt-2">
       <h5 className="mb-3 font-size-11 text-muted text-uppercase">
-        Choose Theme Image :
+        Choisissez l'image du thème :
       </h5>
       <div className="d-flex align-items-center flex-wrap gap-2 theme-btn-list theme-btn-list-img">
         {(themeImages || []).map((image: ThemeImageTypes, key: number) => (

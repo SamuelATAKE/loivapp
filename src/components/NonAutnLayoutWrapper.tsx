@@ -9,6 +9,7 @@ import authImage from "../assets/images/auth-img.png";
 interface NonAuthLayoutWrapperProps {
   children: any;
 }
+
 const NonAuthLayoutWrapper = (props: NonAuthLayoutWrapperProps) => {
   return (
     <>
@@ -21,11 +22,11 @@ const NonAuthLayoutWrapper = (props: NonAuthLayoutWrapperProps) => {
                   <h3>
                     <Link to="/" className="text-white">
                       <i className="bx bxs-message-alt-detail align-middle text-white h3 mb-1 me-2"></i>{" "}
-                      Doot
+                      LOIV
                     </Link>
                   </h3>
                   <p className="font-size-16">
-                    Responsive Bootstrap 5 Chat App
+                    Application de dénonciation de violences contre le genre
                   </p>
                 </div>
                 <div className="mt-auto">
@@ -43,9 +44,9 @@ const NonAuthLayoutWrapper = (props: NonAuthLayoutWrapperProps) => {
                     <Col xl={12}>
                       <div className="text-center text-muted p-4">
                         <p className="mb-0">
-                          &copy; {new Date().getFullYear()} Doot. Crafted with{" "}
-                          <i className="mdi mdi-heart text-danger"></i> by
-                          Pichforest
+                          &copy; {new Date().getFullYear()} LOIV. Développé {" "}
+                          <i className="mdi mdi-heart text-danger"></i> par
+                          Ghiyada Africa
                         </p>
                       </div>
                     </Col>

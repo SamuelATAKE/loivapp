@@ -36,7 +36,7 @@ const ForwardMessage = ({
   return (
     <div className="replymessage-block mb-2">
       <h5 className="conversation-name">
-        {isReplyFromMe ? "You" : replyUserName}
+        {isReplyFromMe ? "Vous" : replyUserName}
       </h5>
       {forwardData?.text && <p className="mb-0">{forwardData?.text}</p>}
 
@@ -44,13 +44,13 @@ const ForwardMessage = ({
         <p className="mb-0">
           {forwardData?.attachments &&
             !forwardData?.image &&
-            `${forwardData?.attachments.length} Files`}
+            `${forwardData?.attachments.length} Fichiers`}
           {forwardData?.image &&
             !forwardData?.attachments &&
             `${forwardData?.image.length} Images`}
           {forwardData?.image &&
             forwardData?.attachments &&
-            `${forwardData?.attachments.length} Files & ${forwardData?.image.length} Images`}
+            `${forwardData?.attachments.length} Fichiers & ${forwardData?.image.length} Images`}
         </p>
       )}
     </div>
@@ -186,7 +186,7 @@ const ForwardModal = ({
   };
 
   const totalC = (contacts || []).length;
-
+  
   /*
   select contacts
   */
@@ -254,7 +254,7 @@ const ForwardModal = ({
           />
           <textarea
             className="form-control"
-            placeholder="Type your message..."
+            placeholder="Entrez votre message..."
             rows={2}
             value={message || ""}
             onChange={(e: any) => {
@@ -267,7 +267,7 @@ const ForwardModal = ({
           <input
             type="text"
             className="form-control bg-light border-0 pe-0"
-            placeholder="Search here.."
+            placeholder="Rechercher.."
             aria-label="Example text with button addon"
             aria-describedby="forwardSearchbtn-addon"
             value={search || ""}
@@ -300,7 +300,7 @@ const ForwardModal = ({
                   type="button"
                   onClick={onShareAll}
                 >
-                  Share All
+                  Partager tout
                 </Button>
               </div>
             </div>

@@ -60,7 +60,7 @@ const UserCoverImage = ({ basicDetails }: UserCoverImageProps) => {
                   </Label>
                 </div>
                 <UncontrolledTooltip target="change-cover" placement="bottom">
-                  Change Background
+                  Changement de fond
                 </UncontrolledTooltip>
               </div>
             </div>

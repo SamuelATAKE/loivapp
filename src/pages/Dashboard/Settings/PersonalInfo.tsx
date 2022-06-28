@@ -24,19 +24,19 @@ const PersonalInfo = ({ basicDetails }: PersonalInfoProps) => {
       </div>
 
       <div>
-        <p className="text-muted mb-1">Name</p>
+        <p className="text-muted mb-1">Nom</p>
         <h5 className="font-size-14">{fullName}</h5>
       </div>
 
       <div className="mt-4">
-        <p className="text-muted mb-1">Email</p>
+        <p className="text-muted mb-1">Adresse mail</p>
         <h5 className="font-size-14">
           {basicDetails && basicDetails.email ? basicDetails.email : "-"}
         </h5>
       </div>
 
       <div className="mt-4">
-        <p className="text-muted mb-1">Location</p>
+        <p className="text-muted mb-1">Localisation</p>
         <h5 className="font-size-14 mb-0">
           {basicDetails && basicDetails.location ? basicDetails.location : "-"}
         </h5>

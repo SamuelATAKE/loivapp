@@ -20,7 +20,7 @@ function RepliedMessage({ isFromMe, message, fullName }: RepliedMessageProps) {
       <div className="replymessage-block mb-2 d-flex align-items-start">
         <div className="flex-grow-1">
           <h5 className="conversation-name">
-            {isReplyFromMe ? "You" : fullName}
+            {isReplyFromMe ? "Vous" : fullName}
           </h5>
           {message.replyOf?.text && (
             <p className="mb-0">{message.replyOf?.text}</p>

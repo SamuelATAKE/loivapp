@@ -46,7 +46,7 @@ const AudioCallModal = ({ isOpen, onClose, user }: AudioCallModalProps) => {
                 </span>
               </Button>
               <h5 className="font-size-11 text-uppercase text-muted mt-2">
-                Mute
+                Muet
               </h5>
             </div>
             <div className="avatar-md h-auto">
@@ -60,7 +60,7 @@ const AudioCallModal = ({ isOpen, onClose, user }: AudioCallModalProps) => {
                 </span>
               </Button>
               <h5 className="font-size-11 text-uppercase text-muted mt-2">
-                Speaker
+                Micro
               </h5>
             </div>
             <div className="avatar-md h-auto">
@@ -74,7 +74,7 @@ const AudioCallModal = ({ isOpen, onClose, user }: AudioCallModalProps) => {
                 </span>
               </Button>
               <h5 className="font-size-11 text-uppercase text-muted mt-2">
-                Add New
+                Ajouter nouveau
               </h5>
             </div>
           </div>

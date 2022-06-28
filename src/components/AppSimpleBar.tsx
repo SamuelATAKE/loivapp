@@ -10,6 +10,7 @@ interface AppSimpleBarProps {
   className?: string;
   scrollRef?: any;
 }
+
 const AppSimpleBar = ({
   children,
   style,

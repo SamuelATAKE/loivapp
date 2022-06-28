@@ -12,6 +12,7 @@ import LockScreen from "../pages/Authentication/LockScreen";
 
 // dashboard
 import Dashboard from "../pages/Dashboard/index";
+import DashboardTeleoperateur from "../pages/DashboardTeleoperateur/index";
 import StarterPage from "../pages/StarterPage/index";
 
 interface RouteProps {
@@ -21,7 +22,6 @@ interface RouteProps {
 }
 
 const publicRoutes: Array<RouteProps> = [
-  { path: "/logout", component: Logout },
   { path: "/auth-login", component: Login },
   { path: "/auth-register", component: Register },
   { path: "/auth-recoverpw", component: RecoverPassword },
@@ -33,6 +33,7 @@ const publicRoutes: Array<RouteProps> = [
 const privateRoutes: Array<RouteProps> = [
   { path: "/pages-starter", component: StarterPage },
   { path: "/dashboard", component: Dashboard },
+  { path: "/dashboard-teleoperateur", component: DashboardTeleoperateur },
   { path: "/", exact: true, component: Root },
 ];
 

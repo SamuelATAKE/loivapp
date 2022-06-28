@@ -9,7 +9,7 @@ const AttachedFiles = ({ chatUserDetails }: AttachedFilesProps) => {
     <div>
       <div>
         <h5 className="font-size-11 text-muted text-uppercase mb-3">
-          Attached Files
+          Fichiers joints
         </h5>
       </div>
 
@@ -51,13 +51,13 @@ const AttachedFiles = ({ chatUserDetails }: AttachedFilesProps) => {
                       className="dropdown-item d-flex align-items-center justify-content-between"
                       to="#"
                     >
-                      Share <i className="bx bx-share-alt ms-2 text-muted"></i>
+                      Partager <i className="bx bx-share-alt ms-2 text-muted"></i>
                     </Link>
                     <Link
                       className="dropdown-item d-flex align-items-center justify-content-between"
                       to="#"
                     >
-                      Bookmark{" "}
+                      Notes{" "}
                       <i className="bx bx-bookmarks text-muted ms-2"></i>
                     </Link>
                     <div className="dropdown-divider"></div>

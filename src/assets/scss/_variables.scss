@@ -5,9 +5,12 @@
 //
 
 // Vertical Sidebar - Default Light
-$sidebar-bg: #2e2e2e;
-$sidebar-menu-item-color: #878a92;
-$sidebar-menu-item-active-color: #4eac6d;
+$sidebar-bg: #78009f;
+// $sidebar-bg: #2e2e2e;
+$sidebar-menu-item-color: #e2c6ec;
+// $sidebar-menu-item-color: #878a92;
+$sidebar-menu-item-active-color: #79019f;
+// $sidebar-menu-item-active-color: #4eac6d;
 $sidebar-menu-item-active-bg: #f7f7ff;
 $sidebar-sub-bg: #ffffff;
 
@@ -87,6 +90,7 @@ $yellow: #ffd166;
 $green: #06d6a0;
 $teal: #050505;
 $cyan: #50a5f1;
+$violet: #78009f;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -104,11 +108,13 @@ $colors: (
   "white": $white,
   "gray": $gray-600,
   "gray-dark": $gray-800,
+  "violet": $violet
 );
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary: $blue;
+$primary: $violet;
+// $primary: $blue;
 $secondary: $gray-600;
 $success: $green;
 $info: $cyan;

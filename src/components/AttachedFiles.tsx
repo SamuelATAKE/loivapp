@@ -57,20 +57,20 @@ const AttachedFileItem = ({ attachedFile }: AttachedFileItemProps) => {
                   className="dropdown-item d-flex align-items-center justify-content-between"
                   href="#"
                 >
-                  Share <i className="bx bx-share-alt ms-2 text-muted"></i>
+                  Partager <i className="bx bx-share-alt ms-2 text-muted"></i>
                 </DropdownItem>
                 <DropdownItem
                   className="dropdown-item d-flex align-items-center justify-content-between"
                   href="#"
                 >
-                  Bookmark <i className="bx bx-bookmarks text-muted ms-2"></i>
+                  Signer <i className="bx bx-bookmarks text-muted ms-2"></i>
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem
                   className="dropdown-item d-flex align-items-center justify-content-between"
                   href="#"
                 >
-                  Delete <i className="bx bx-trash ms-2 text-muted"></i>
+                  Supprimer <i className="bx bx-trash ms-2 text-muted"></i>
                 </DropdownItem>
               </DropdownMenu>
             </Dropdown>
@@ -93,14 +93,14 @@ const AttachedFiles = ({ attachedFiles }: AttachedFilesProps) => {
 
   return (
     <div>
-      <SectionTitle title="Attached Files" />
+      <SectionTitle title="Fichiers joints" />
 
       <div>
         {attachedFiles
           ? files.map((attachedFile: AttachedfileItemTypes, key: number) => (
               <AttachedFileItem attachedFile={attachedFile} key={key} />
             ))
-          : "No Files."}
+          : "Aucun fichier."}
       </div>
     </div>
   );
