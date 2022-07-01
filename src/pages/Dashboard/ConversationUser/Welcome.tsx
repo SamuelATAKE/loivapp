@@ -14,7 +14,7 @@ const Welcome = () => {
                 <div className="avatar-title bg-soft-primary rounded-circle">
                   {/* <i className="bx bxs-message-alt-detail display-4 text-primary m-0"></i> */}
                   
-                  <img className="" src="logo.png" />
+                  <img src="logo.png" />
                 </div>
               </div>
               <h4>Bienvenue dans LOIV</h4>
