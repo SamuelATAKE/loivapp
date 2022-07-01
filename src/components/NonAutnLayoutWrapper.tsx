@@ -21,11 +21,12 @@ const NonAuthLayoutWrapper = (props: NonAuthLayoutWrapperProps) => {
                 <div className="text-white-50">
                   <h3>
                     <Link to="/" className="text-white">
-                      <i className="bx bxs-message-alt-detail align-middle text-white h3 mb-1 me-2"></i>{" "}
-                      LOIV
+                      {/* <i className="bx bxs-message-alt-detail align-middle text-white h3 mb-1 me-2"></i>{" "}
+                      LOIV */}
+                      <img src="logo.png" alt="logo" />
                     </Link>
                   </h3>
-                  <p className="font-size-16">
+                  <p className="font-size-16 text-white">
                     Application de dénonciation de violences contre le genre
                   </p>
                 </div>
@@ -44,8 +45,7 @@ const NonAuthLayoutWrapper = (props: NonAuthLayoutWrapperProps) => {
                     <Col xl={12}>
                       <div className="text-center text-muted p-4">
                         <p className="mb-0">
-                          &copy; {new Date().getFullYear()} LOIV. Développé {" "}
-                          <i className="mdi mdi-heart text-danger"></i> par
+                          &copy; {new Date().getFullYear()} LOIV. Développée {" "}par
                           Ghiyada Africa
                         </p>
                       </div>
